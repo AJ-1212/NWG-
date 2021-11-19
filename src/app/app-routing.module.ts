@@ -8,30 +8,33 @@ import { RegisterComponent } from './components/register/register.component';
 
 
 const routes: Routes = [
-
+  
 ];
 @NgModule({
   imports: [RouterModule.forRoot([
-{
-  path:'dashboard',
-  component:DashboardComponent
+    {path:'',redirectTo:'/register',pathMatch:'full'},
   
-},
-{
-path:'login',
-component:LoginComponent
-
-},
-{
-  path:'nav-bar',
-  component:NavBarComponent
-},
-
-{
-  path:'register',
-  component:RegisterComponent
-}
-
+  
+    {
+      path:'dashboard',
+      component:DashboardComponent
+      
+    },
+    {
+    path:'login',
+    component:LoginComponent
+    
+    },
+    {
+      path:'nav-bar',
+      component:NavBarComponent
+    },
+    
+    {
+      path:'register',
+      component:RegisterComponent
+    }
+    
     
   ])],
   exports: [RouterModule]

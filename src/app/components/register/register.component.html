@@ -1,5 +1,5 @@
 <mat-toolbar>
-    <span>Registration</span>
+    <span>User Registration</span>
   </mat-toolbar>
   <mat-card class="my-card">
      <mat-card-content>
@@ -13,8 +13,8 @@
               <input  matInput  placeholder="Last Name" name="lname"  required>
            </mat-form-field>
            <mat-form-field class="full-width">
-              <mat-label>Address</mat-label>
-              <input  matInput  placeholder="Address" name="address"  required>
+              <mat-label>Phone no</mat-label>
+              <input  matInput  placeholder="Phone no" name="phoneno"  required>
            </mat-form-field>
            <mat-form-field class="full-width">
               <mat-label>Email</mat-label>
@@ -23,6 +23,13 @@
            <mat-form-field class="full-width">
               <mat-label>Password</mat-label>
               <input  matInput  placeholder="Password"  name="password">
+              <!-- <div *ngIf="password.invalid && (password.dirty || password.touched)">
+               <div *ngIf="password.errors.required" class="alert alert-danger">
+                  Password is required 
+    </div>
+    <div *ngIf="password.errors.minlength">
+        Password must be of 4-8 characters.
+              </div> -->
            </mat-form-field>
            <section class="example-section">
               <label class="full-width">Gender:</label>
@@ -40,5 +47,12 @@
               <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
               <mat-datepicker #picker></mat-datepicker>
            </mat-form-field>
-        </form>
+</form>
+</mat-card-content>
+<mat-card-actions>
+   <button mat-raised-button (click)="register()" color="primary">REGISTER</button>
+</mat-card-actions>
+</mat-card>
+
+
      
