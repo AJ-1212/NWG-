@@ -1,10 +1,59 @@
-<div class="bootstrap-wrapper">
+<!-- <div class="bootstrap-wrapper">
 
     <div class="container mt">
         <h1 class="text-center"> Natwest Bank Dashboard </h1>
 
-
+        <div id="dashboard-component" class="container mx-auto grid">
+            <div class="flex mb-4 mt-24">
+              <div class="mx-auto">
+                <h3 class="text-gray-700 font-normal mx-auto">
+                  Hi User, here is your dashboard:
+                </h3>
+              </div>
+            </div>
+            <app-login></app-login>
+          </div>
     </div>
 
+</div> -->
+
+
+<div style="height: 100vh;">
+    <mat-toolbar color="primary">
+        <div fxShow="true" fxHide.gt-sm="true">
+          <!-- <button mat-icon-button (click)="sidenav.toggle()"> -->
+            <mat-icon>menu</mat-icon>
+          <!-- </button> -->
+        </div>
+        <a mat-button class="companyName" routerLink="/">
+          <span>NatWest Bank</span>
+        </a>
+
+<span class="example-spacer"></span>
+        <div fxShow="true" fxHide.lt-md="true">
+
+<!-- <a mat-button (click)="myDetails()">MyDetails</a> -->
+<mat-toolbar-row>
+    <span>Account Summary</span>
+    <span class="example-spacer"></span>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+    <span>Transaction</span>
+    <span class="example-spacer"></span>
+  </mat-toolbar-row>
+
+<mat-toolbar-row>
+    <span>Account Transfer</span>
+    <span class="example-spacer"></span>
+  </mat-toolbar-row>
+  
+
+
+
+
+
+  
 </div>
+
 
