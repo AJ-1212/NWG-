@@ -1,19 +1,14 @@
-.example-card {
-    width: 350px;
-    height: 400px;
-    display: block;
-    margin-left:auto;
-    margin-right:auto; 
+#login {
+  margin-left: 100ch;
+  margin-right: 100ch;
+  margin-top:25ch;
+  padding: 5ch;
+  border: 1px slateblue solid;
+  border-radius: 5px;
+  box-shadow: 10px 10px 7px grey;
 }
 
-.example-form {
-  width:80%; 
-}
-
-.example-full-width {
-  margin: 0 auto;
-   z-index: 1;
-   width:50%; 
-   height: 50px; 
+button {
+  margin-left: 7ch;
 }
 

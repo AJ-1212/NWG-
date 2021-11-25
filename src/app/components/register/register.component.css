@@ -1,9 +1,17 @@
-.my-form{
-    min-width: 150px;
-    max-width: 500px;
-    width: 100%;
-  }
-  
-  .full-width {
-    width: 100%;
-  }
+form {
+  margin-left: 80ch;
+  margin-right: 100ch;
+  margin-top:10ch;
+  padding: 5ch;
+  border: 1px slateblue solid;
+  border-radius: 5px;
+  box-shadow: 10px 10px 7px grey;
+}
+
+input {
+  width: 3000px;
+}
+
+button {
+  margin-left: 7ch;
+}

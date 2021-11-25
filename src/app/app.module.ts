@@ -18,6 +18,9 @@ import {MatCardModule} from '@angular/material/card';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import {MatRadioModule} from '@angular/material/radio';
 import { MatNativeDateModule } from '@angular/material/core';
+import { AccountBalanceComponent } from './components/account-balance/account-balance.component';
+import {MatIconModule} from '@angular/material/icon'
+
 
 
 
@@ -28,7 +31,9 @@ import { MatNativeDateModule } from '@angular/material/core';
     LoginComponent,
     NavBarComponent,
     DashboardComponent,
-    RegisterComponent
+    RegisterComponent,
+    AccountBalanceComponent
+    
    
     
   ],
@@ -46,7 +51,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatDatepickerModule,
    ReactiveFormsModule,
    MatRadioModule,
-   MatNativeDateModule 
+   MatNativeDateModule ,
+   MatIconModule
     
 
   ],
