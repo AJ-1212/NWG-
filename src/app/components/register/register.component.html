@@ -1,5 +1,5 @@
-<form [formGroup]="regForm">
-    <mat-form-field appearance="fill" (ngSubmit)="register()">
+<form [formGroup]="regForm" (ngSubmit)="register()">
+    <mat-form-field appearance="fill" >
         <mat-label>Enter your Name</mat-label>
         <input matInput type="text" formControlName="name">
       </mat-form-field>
@@ -44,5 +44,5 @@
         <input matInput type="text" formControlName="bankName">
       </mat-form-field>
       <br />
-      <button mat-raised-button color="primary">Register</button>
+      <button mat-raised-button color="primary" type="submit">Register</button>
 </form>

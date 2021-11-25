@@ -28,7 +28,7 @@ export class RegisterComponent implements OnInit {
 
 register()
   {
-    console.log(this.regForm.value);
+    console.log(this.regForm.get("password")?.value);
     this.testc.addUser(this.regForm.value).subscribe(
       data=>{
         console.log("add");

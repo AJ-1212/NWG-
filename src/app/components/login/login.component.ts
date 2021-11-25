@@ -22,7 +22,8 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 login(): void {
-    this.http.get('http://localhost:9095/getDetails/'+this.username+'/'+this.passwordAngular, {
+  console.log(this.username+" "+this.passwordAngular);
+  this.http.get('http://localhost:9095/getDetails/'+this.username+'/'+this.passwordAngular, {
       headers: {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json'
