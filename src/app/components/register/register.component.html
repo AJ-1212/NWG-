@@ -1,78 +1,48 @@
-<div class="container-fluid">
-  <div class="row">
-     <div class="col-12">
-    <form [formGroup]="regForm" (ngSubmit)="register()">
-               <div class="form-group">
-                   <label for="name" class="fa fa-user"></label>
-                   <input type="text" placeholder="Enter Your Name" formControlName="name">
-                   <span class="text-danger" *ngIf="regForm.controls.name.errors && regForm.controls.name.touched">
-                       Name is Required
-                   </span>
-               </div>
-               <div class="form-group">
-                   <label for="mobileNumber" class="fa fa-mobile"></label>
-                   <input type="tel" placeholder="Mobile Number" formControlName="mobileNumber">
-                   <span class="text-danger" *ngIf="regForm.controls.mobileNumber.errors && regForm.controls.mobileNumber.touched">
-                       Invalid Mobile Number
-                   </span>
-               </div>
-               <div class="form-group">
-                   <label for="email" class="fa fa-envelope"></label>
-                   <input type="email" placeholder="Email Address" formControlName="email">
-                   <span class="text-danger" *ngIf="regForm.controls.email.errors && regForm.controls.email.touched">
-                       Invalid Email Address
-                   </span>
-               </div>
-               <div class="form-group">
-                   <label for="userName" class="fa fa-user"></label>
-                   <input type="text" placeholder="Enter your user name" formControlName="userName">
-                   <span class="text-danger" *ngIf="regForm.controls.userName.errors && regForm.controls.userName.touched">
-                     User Name is Required
-                   </span>
-               </div>
-               <div class="form-group">
-                   <label for="password" class="fa fa-lock"></label>
-                   <input type="password" placeholder="Password" formControlName="password">
-                   <span class="text-danger" *ngIf="regForm.controls.password.errors && regForm.controls.password.touched">
-                     Atleast 6 character Password is Required  
-                   </span>
-               </div>
-               <div class="form-group">
-                   <label for="address" class="fa fa-address-book"></label>
-                   <input type="text" placeholder="Enter Your Address" formControlName="address">
-                   <span class="text-danger" *ngIf="regForm.controls.address.errors && regForm.controls.address.touched">
-                      Address is required 
-                   </span>
-               </div>
-               <div class="form-group">
-                   <label for="accountNo" class="fa fa-money"></label>
-                   <input type="number" placeholder="Account Number" formControlName="accountNo">
-                   <span class="text-danger" *ngIf="regForm.controls.accountNo.errors && regForm.controls.accountNo.touched">               
-                       Invalid Account number                       
-                   </span>
-               </div>
-               <div class="form-group">
-               <label for="bankName" class="fa fa-university"></label>
-                   <input type="text" placeholder="Bank Name" formControlName="bankName">
-                   <span class="text-danger" *ngIf="regForm.controls.bankName.errors && regForm.controls.bankName.touched">
-                       Enter the bank name                       
-                   </span>
-                 </div>
-               <div class="text-center">
-                   <button id="submitButton" type="submit" class="btn btn-primary" [disabled]="!regForm.valid">
-                    Register
-                   </button>
-               </div>
-               <div class="text-success" *ngIf="successMessage">
-                   {{regForm.value.userName}} {{successMessage}}
-               </div>
-               <a routerLink="/login">Already registered? Click to login</a>
-           </form>
-       </div>
-   </div>
-</div>
-
-
-
-
-
+<form [formGroup]="regForm" (ngSubmit)="register()">
+    <mat-form-field appearance="fill" >
+        <mat-label>Enter your Name</mat-label>
+        <input matInput type="text" formControlName="name">
+      </mat-form-field>
+      <br />
+      <mat-form-field appearance="fill">
+        <mat-label>Enter your Mobile number</mat-label>
+        <input matInput type="number" formControlName="mobileNumber">
+      </mat-form-field>
+      <br />
+      <mat-form-field appearance="fill">
+        <mat-label>Enter your Email</mat-label>
+        <input matInput type="text" formControlName="email">
+      </mat-form-field>
+      <br />
+      <mat-form-field appearance="fill">
+        <mat-label>Enter your Username</mat-label>
+        <input matInput type="text" formControlName="userName">
+      </mat-form-field>
+      <br />
+      <mat-form-field appearance="fill">
+        <mat-label>Enter your Name</mat-label>
+        <input matInput type="text" formControlName="name">
+      </mat-form-field>
+      <br />
+      <mat-form-field appearance="fill">
+        <mat-label>Enter your Password</mat-label>
+        <input matInput type="text" formControlName="password">
+      </mat-form-field>
+      <br />
+      <mat-form-field appearance="fill">
+        <mat-label>Enter your Address</mat-label>
+        <input matInput type="text" formControlName="address">
+      </mat-form-field>
+      <br />
+      <mat-form-field appearance="fill">
+        <mat-label>Enter your Account Number</mat-label>
+        <input matInput type="number" formControlName="accountNo">
+      </mat-form-field>
+      <br />
+      <mat-form-field appearance="fill">
+        <mat-label>Enter your Bank Name</mat-label>
+        <input matInput type="text" formControlName="bankName">
+      </mat-form-field>
+      <br />
+      <button mat-raised-button color="primary" type="submit">Register</button>
+</form>

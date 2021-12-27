@@ -1,46 +1,14 @@
-/* .example-card {
-  width: 350px;
-  height: 400px;
-  display: block;
-  margin-left:auto;
-  margin-right:auto; 
+#login {
+  margin-left: 100ch;
+  margin-right: 100ch;
+  margin-top:25ch;
+  padding: 5ch;
+  border: 1px slateblue solid;
+  border-radius: 5px;
+  box-shadow: 10px 10px 7px grey;
 }
 
-.example-form {
-width:80%; 
+button {
+  margin-left: 7ch;
 }
-
-.example-full-width {
-margin: 0 auto;
- z-index: 1;
- width:50%; 
- height: 50px; 
-} */
-
-
-#login-container {
-  min-height: 100vh;
-  min-width: 100vw;
-  background-image: url('../../../assets/images.jfif');
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: white;
-  position: relative;
-}
-  /* .logo {
-    max-height: 60px;
-    margin: auto;
-    margin-bottom: 30px;
-  } */
-
-
-  .notification {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-  }
-
 

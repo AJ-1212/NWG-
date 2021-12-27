@@ -1,73 +1,15 @@
-<!-- <div class="container text-center">
-    
-    <img class="Image" style="width:200px;" src="/src/assets/Image.jpg" />
+<div id="login">
+  <mat-form-field class="example-form-field" appearance="fill">
+    <mat-label>Enter your Email</mat-label>
+    <input matInput type="text" [(ngModel)]="username" />
 
-    
-    </div> -->
- 
-    <!-- <mat-card class="example-card">
-      <mat-card-header>
-        <mat-card-title>Login</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <form class="example-form">
-          <table class="example-full-width" cellspacing="0">
-            <tr>
-              <td>
-                <mat-form-field class="example-full-width">
-                <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
-                </mat-form-field>
-              </td>
-            </tr>
-            <tr>
-            <td><mat-form-field class="example-full-width">
-              <input matInput placeholder="Password" [(ngModel)]="passwordAngular"type="password" name="password" required>
-            </mat-form-field></td>
-          </tr></table>
-        </form>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-raised-button (click)="login()" color="primary">Login</button>
-      </mat-card-actions>
-    </mat-card>
- -->
+  </mat-form-field>
+  <br />
+  <mat-form-field class="example-form-field" appearance="fill">
+    <mat-label>Enter your password</mat-label>
+    <input matInput type="password" [(ngModel)]="passwordAngular" />
 
-
- <div id="login-container" class="flex container mx-auto items-center justify-center">
-   <div class="w-full max-w-xs">
-     <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-       <!-- <img class="background-image" src="../../../assets/Image.jpg" /> -->
-       <div class="mb-4">
-         <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-           Username
-         </label>
-         <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username" required>
-         <p class="text-red-500 text-xs italic">Your username can consist of letters and numbers only!</p>
-       </div>
-       <div class="mb-6">
-         <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
-           Password
-         </label>
-         <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************" required minlength="6">
-       </div>
-       <div class="flex items-center justify-between">
-         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-           Sign In
-         </button>
-         <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
-           Forgot Password?
-         </a>
-       </div>
-     </form>
-     <p class="text-center text-white text-xs">
-       &copy;2020 FinanceApp. All rights reserved.
-     </p>
-   </div>
-   <div class="notification bg-indigo-900 text-center py-4 lg:px-4">
-     <div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
-       <span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">ERROR</span>
-       <span class="font-semibold mr-2 text-left flex-auto">Error message here</span>
-     </div>
-   </div>
- </div>
-    
+  </mat-form-field>
+  <br />
+  <button mat-raised-button color="primary" (click)="login()">Login</button>
+</div>

@@ -1,7 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { LoginService } from 'src/app/services/login.service';
-import { HttpClient } from '@angular/common/http';
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -9,17 +8,22 @@ import { HttpClient } from '@angular/common/http';
 })
 export class LoginComponent implements OnInit {
 
+ 
   
 
   constructor(private loginservice:LoginService, private http: HttpClient) { }
 
+  value = "value"
+
   username = "";
   passwordAngular = "";
 
+  
   ngOnInit() {
   }
 login(): void {
-    this.http.get('http://localhost:9095/getDetails/'+this.username+'/'+this.passwordAngular, {
+  console.log(this.username+" "+this.passwordAngular);
+  this.http.get('http://localhost:9095/getDetails/'+this.username+'/'+this.passwordAngular, {
       headers: {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json'

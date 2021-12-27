@@ -1,15 +1,14 @@
-.form-group {
-  width: 350px;
-  height: 400px;
-  display: block;
-  margin-left:auto;
-  margin-right:auto; 
+form {
+  margin-left: 80ch;
+  margin-right: 100ch;
+  margin-top:10ch;
+  padding: 5ch;
+  border: 1px slateblue solid;
+  border-radius: 5px;
+  box-shadow: 10px 10px 7px grey;
 }
 
 
-.form-group {
-margin: 0 auto;
- z-index: 1;
- width:50%; 
- height: 50px; 
+button {
+  margin-left: 7ch;
 }
